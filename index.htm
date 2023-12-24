@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //---------------------------------Task 1------------------------------
+         var date= new Date()
+         document.write(date);
+        //---------------------------------Task 2-----------------------------
+        var month = new Date()
+        var show = month.getMonth()
+        var arr= ['jan','feb','mar','apr','may','jun','july','aug','sep','oct','nov','December']
+        for (let i = 0; i < 12; i++) {
+          if (i == show) {
+        alert("Current month: "+arr[i]);
+            break
+          }
+        }
+        //---------------------------------Task 4-----------------------------
+        var d= new Date()
+        var date = d.getDay()
+        console.log(date);
+        var arr=['sun','mon','tue','wed','thur','fri','Sat',]
+        for (let i = 0; i < 7; i++) {
+           if (date== i) {
+            alert('Today is '+arr[i])
+            break
+           } else{
+            if (date== arr[0] || arr[6] ) {
+                console.log('ok');
+            }
+           }
+           
+        }
+        // //---------------------------------Task 5------------------------------
+         var d= new Date()
+        var date = d.getDay()
+       
+        var arr=['sun','mon','tue','wed','thur','fri','Sat',]
+      for (let i = 0; i < 7; i++) {
+
+           if (date== i) {
+            alert('Its a work day'+arr[i])
+        
+           }
+           if (date == 0 || 6 ) {
+               document.write('So Its Fun day');
+                break
+            }
+           }
+           
+        //---------------------------------Task 6------------------------------
+        var m = new Date()
+        var d= m.getDate()
+        for (let i = 0; i < 30; i++) {
+           if (d > 15) {
+            console.log("Last fifteen days of the month");
+            break
+           }else{
+            console.log("First fifteen days of the month");
+            break
+
+           }
+            
+        }
+        //---------------------------------Task 7------------------------------
+  
+        var date = new Date();
+         console.log("Current Date and Time: " + date);
+         
+         var milliSec = date.getTime();
+         console.log("Milliseconds since January 1, 1970: " + milliSec);
+         
+         var getMinutes = milliSec / (1000 * 60);
+         console.log("Minutes since January 1, 1970: " + getMinutes);
+
+        //---------------------------------Task 8------------------------------
+        var date = new Date();
+        var hour = date.getHours();
+        console.log(hour);
+
+            if (hour > 12) {
+                console.log('It\'s PM');
+            } else {
+                console.log('It\'s AM');
+            }
+
+
+        //---------------------------------Task 9------------------------------
+    </script>
+</body>
+</html>
